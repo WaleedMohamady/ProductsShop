@@ -1,0 +1,34 @@
+<div class="authentication-card-container" fxLayout="column" fxLayoutAlign="center">
+    <mat-card class="authentication-card">
+        <mat-card-header>
+            <mat-card-title>Add/Edit Product</mat-card-title></mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="addingProductForm" fxLayout="column" fxLayoutAlign="center stretch">
+                <mat-form-field>
+                    <mat-label>Product Name</mat-label>
+                    <input matInput formControlName="name" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Description</mat-label>
+                    <input matInput formControlName="description" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Price</mat-label>
+                    <input matInput type="number" formControlName="price" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>ImageURL</mat-label>
+                    <input matInput formControlName="imageURL" />
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button class="me-3" mat-raised-button color="primary" (click)="onAddSubmit()">
+                Add Product
+            </button>
+            <button mat-raised-button color="primary" (click)="onEditSubmit()">
+                Edit Product
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

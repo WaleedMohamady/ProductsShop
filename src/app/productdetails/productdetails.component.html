@@ -1,0 +1,21 @@
+<table class="table align-middle table-dark table-bordered border-dark">
+    <thead>
+        <tr>
+            <th scope="col" class="bg-primary">Product Name</th>
+            <th scope="col" class="bg-primary">Description</th>
+            <th scope="col" class="bg-primary">Price</th>
+            <th scope="col" class="bg-primary">ImageURL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="text-center">{{Productdata?.name}}</td>
+            <td class="text-center">{{Productdata?.description}}</td>
+            <td class="text-center bg-success">{{Productdata?.price}}</td>
+            <td class="text-center bg-light">
+                <img style="width: 225; height: 350;" class="" src="{{Productdata?.imageURL}}" alt="{{Productdata?.name}}">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
